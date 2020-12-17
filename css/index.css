@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*------------------------- Шрифт(foonts) -------------------------- */
+@font-face {
+  font-family: "Muli-Bold";
+  src: local("☺"), url("/assets/fonts/Muli-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli-ExtraBold";
+  src: local("☺"), url("/assets/fonts/Muli-ExtraBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli-ExtraBoldItalic";
+  src: local("☺"), url("/assets/fonts/Muli-ExtraBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Muli-Regular";
+  src: local("☺"), url("/assets/fonts/Muli-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/assets/fonts/Poppins-Medium.eot");
+  src: local("☺"), url("/assets/fonts/Poppins-Medium.woff") format("woff"), url("/assets/fonts/Poppins-Medium.ttf") format("truetype"), url("/assets/fonts/Poppins-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/assets/fonts/Poppins-SemiBold.eot");
+  src: local("☺"), url("/assets/fonts/Poppins-SemiBold.woff") format("woff"), url("/assets/fonts/Poppins-SemiBold.ttf") format("truetype"), url("/assets/fonts/Poppins-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+/*------------------------------------------------------------------ */
+/*------------------ Обноляющий стиль(Zero style) ------------------ */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+main,
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body {
+  font-family: "Poppins-SemiBold";
+}
+
+/*------------------------------------------------------------------ */
+/*---------------- Препроцессор(preprocessor) ---------------------- */
+/*---------------------- Переменная(variables) --------------------- */
+/*------------------------------------------------------------------ */
+/*----------------------- Элемент(elements) ------------------------ */
+/*------------------------------------------------------------------ */
+/*------------------------- Миксин(mixins) ------------------------- */
+/*--**************************************************************-- */
+/*-----------------*****Структура(structure)*****------------------- */
+/*-------------------- Header(шапка докуманта) --------------------- */
+/*------------------------------------------------------------------ */
+/*-------------------- Content(контент страницы) ------------------- */
+/*---------------------- smoothies-------------- ------------------- */
+/*------------------------------------------------------------------ */
+/*------------------------------- about----------------------------- */
+/*------------------------------------------------------------------ */
+/*---------------------------- products ---------------------------- */
+/*------------------------------------------------------------------ */
+/*-------------------------------- story --------------------------- */
+/*------------------------------------------------------------------ */
+/*---------------------- testimonials------------------------------- */
+/*------------------------------------------------------------------ */
+/*----------------------------------------- blog ------------------- */
+/*------------------------------------------------------------------ */
+/*-------------------- instagram------------------------------------ */
+/*------------------------------------------------------------------ */
+/*-------------------- Footer(подвал документа) -------------------- */
+/*--**************************************************************-- */
