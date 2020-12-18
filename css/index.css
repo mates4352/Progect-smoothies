@@ -998,6 +998,153 @@ body {
 }
 /*------------------------------------------------------------------ */
 /*----------------------------------------- blog ------------------- */
+.blog__body {
+  margin: 100px 0 50px 0;
+}
+
+.conteiner__blog {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.blog__column:nth-child(2) {
+  border-top: 10px solid #f7ae3b;
+  margin-top: 160px;
+}
+
+.blog__image-wrapper {
+  height: 50%;
+}
+
+.blog__image {
+  height: 100%;
+  width: 100%;
+  margin: 50px 0 200px 0;
+  position: relative;
+  padding: 0 0 67.003% 0;
+  top: 0;
+  left: 0;
+}
+
+.blog__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blog__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog__title {
+  font-size: 30px;
+  color: #f2612d;
+  padding: 50px 20px 0 30px;
+}
+
+.blog__time {
+  margin: 25px 0 50px 40px;
+}
+
+.blog__text {
+  text-align: left;
+  padding: 0 40px 50px 80px;
+}
+
+.blog__text span {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-weight: 900;
+  font-family: "Muli-ExtraBoldItalic";
+}
+
+.blog__text span:after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -30px;
+  display: inline-block;
+  background: url("/assets/images/header/Arrow.png") center/cover no-repeat;
+  width: 20px;
+  height: 10px;
+}
+
+.blog__title-bottom {
+  text-align: center;
+}
+
+.blog__title-bottom span {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #0aa566;
+  font-size: 24px;
+}
+
+.blog__title-bottom span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background: url("/assets/images/blog/Icon.png") center/cover no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+@media (max-width: 764px) {
+  .blog__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .blog__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .blog__column:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    padding-bottom: 0;
+  }
+
+  .blog__text {
+    text-align: center;
+  }
+
+  .blog__image {
+    margin: 50px 0 0 0;
+  }
+}
 /*------------------------------------------------------------------ */
 /*-------------------- instagram------------------------------------ */
 /*------------------------------------------------------------------ */
