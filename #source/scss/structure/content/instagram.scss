@@ -3,9 +3,11 @@
 
 .instagram__row {
 	display: flex;
+	perspective: 700px;
 }
 
 .instagram__column {
+	perspective: 500px;
 	flex: 1 0 20%;
 }
 
@@ -15,6 +17,11 @@
 	left: 0;
 	height: 100%;
 	padding: 0 0 103.76% 0;
+	transition-duration: 1s;
+}
+.instagram__column:hover .instagram__image {
+	transform: rotate3d(1, 1, 0, 360deg);
+	border-radius: 50%;
 }
 .instagram__image img {
 	position: absolute;
