@@ -818,6 +818,7 @@ body {
 
 .story__column:nth-child(1) {
   margin-top: 145px;
+  padding-left: 20px;
 }
 
 .story__wrapper {
@@ -857,7 +858,6 @@ body {
 .story__image {
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
   position: relative;
   top: 0;
   left: 0;
@@ -916,6 +916,86 @@ body {
 }
 /*------------------------------------------------------------------ */
 /*---------------------- testimonials------------------------------- */
+.testimonials__wrapper {
+  background-color: #643318;
+  padding: 120px 0 80px 0;
+}
+
+.title--color {
+  color: #f2612d;
+}
+
+.testimonials__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 130px 0 120px 0;
+}
+
+.testimonials__column:nth-child(1) {
+  margin-right: 50px;
+}
+
+.testimonials__text {
+  display: inline-block;
+  max-width: 460px;
+  color: #ffffff;
+}
+
+.testimonials__sub-text {
+  text-align: center;
+}
+
+.testimonials-name__user {
+  display: inline-block;
+  margin-top: 35px;
+  color: #f7ae3b;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arrow__left,
+.arrow__right {
+  background-color: rgba(255, 255, 0, 0);
+  margin: 0 45px;
+}
+
+.arrow__left img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 764px) {
+  .testimonials__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .testimonials__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .testimonials__column:nth-child(1) {
+    margin: 0 0 50px 0;
+  }
+}
 /*------------------------------------------------------------------ */
 /*----------------------------------------- blog ------------------- */
 /*------------------------------------------------------------------ */
