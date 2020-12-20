@@ -14,16 +14,32 @@ ibg();
 
 /* active(onclick) */
 
-$(document).ready(function () {
-	$('.header__burger').click(function (event) {
-		$('.header__burger,.menu').toggleClass('active');
-		// 		body.lock{
-		// 		overflow: hidden;  -блокирует блок при скроле 
-		$('body').toggleClass('lock');
-	});
-});
 
-/* active(onclick) */
+
+
+
+function getClass(bth, menu, body) {
+	bth.onclick = function () {
+		menu.classList.toggle("active")
+		this.classList.toggle("active")
+		body.classList.toggle('lock')
+	}
+
+}
+getClass(
+	document.querySelector('.header__burger'),
+	document.querySelector('.menu'),
+	document.querySelector('body'));
+
+// $(document).ready(function () {
+// 	$('.header__burger').click(function (event) {
+// 		$('.header__burger,.menu').toggleClass('active');
+// 		// 		body.lock{
+// 		// 		overflow: hidden;  -блокирует блок при скроле 
+// 		$('body').toggleClass('lock');
+// 	});
+// });
+
 
 /* adaptive(уберает указанный блок кода в другой родитель) */
 
@@ -32,17 +48,17 @@ $(window).resize(function (event) {
 });
 
 function adaptive_header(w, h) {
-	var headerMenu = $('.menu');//ЗАДАЕТ ПЕРЕМЕННЫМ ЗНАЧАНИЕ В ВИДЕ КЛАССА 
-	var header__menu = $('.header__list');//ЗАДАЕТ ПЕРЕМЕННЫМ ЗНАЧАНИЕ В ВИДЕ КЛАССА 
-	//ГОВОРИТ ЧТО ЕСЛИ РАЗРЕШЕНИЕ БОЛЬШЕ ТО НАША МЕРЕМЕННАЯ В КОТОРОЙ КЛААСС ПЕРЕХОДЯТ ВДРУГОЕ УКАЗАННОЕ МЕСТО 
-	if (w < 767) {
+	var headerMenu = $('.menu');
+	var header__menu = $('.nav__list');
+
+	if (w < 1200) {
 		if (!header__menu.hasClass('done')) {
 			header__menu.addClass('done').appendTo(headerMenu);
 		}
-		//ГОВОРИТ ЧТО ЕСЛИ ПЕРВОЕ НЕ СРАБОТАЛО ТО ВОЗРАЩАЕТ ПЕРЕМЕННУЮ ОБРАТНО В СВОЙ КОНТЕЙНЕР 
+
 	} else {
 		if (header__menu.hasClass('done')) {
-			header__menu.removeClass('done').prependTo($('.header__menu'));
+			header__menu.removeClass('done').prependTo($('.header__nav'));
 		}
 	}
 }

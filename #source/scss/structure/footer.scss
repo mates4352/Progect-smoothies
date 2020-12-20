@@ -69,8 +69,8 @@
 	position: relative;
 	top: 0;
 	left: 0;
+	width: 90%;
 	height: 60px;
-	width: 95.57%;
 	border-radius: 35px;
 }
 .input__search:before {
@@ -88,7 +88,7 @@
 	font-size: 17px;
 	font-family: "Muli-Bold";
 	color: #6d450c;
-	padding-left: 70px;
+	text-indent: 70px;
 }
 
 .footer__row--df {
@@ -102,10 +102,9 @@
 	font-size: 18px;
 	color: #6d450c;
 	border: 1px solid #000;
-	margin: 0 100px/523.1px * 100%;
 }
 
-.footer__text:before {
+.footer__text span:before {
 	content: "";
 	position: absolute;
 	top: -25px;
@@ -165,4 +164,80 @@
 	background: url("../assets/images/footer/arrow2.png") center/ cover no-repeat;
 	width: 13px;
 	height: 25px;
+}
+@media (max-width: 1200px) {
+	.footer__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer__column {
+		margin: 25px 0 25px 0;
+		flex: 1 0 50%;
+		border: 1px solid #000;
+	}
+	.footer__column:nth-child(2) {
+		flex: 1 0 50%;
+		margin-right: 0;
+	}
+	.footer__column:nth-child(3) {
+		flex: 1 0 50%;
+		margin-right: 0;
+	}
+
+	.footer__column:nth-child(1) {
+		flex: 1 0 50%;
+	}
+	.input [placeholder="Subscribe to our newsletter"] {
+		font-size: 16px;
+		text-indent: 30px;
+	}
+	//----------------------------------
+	.footer__row--df {
+		display: block;
+	}
+	.footer__text {
+		text-align: center;
+	}
+	.footer__text span {
+		border: 1px solid #000;
+		display: inline-block;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.footer__text span:before {
+		content: "";
+		position: absolute;
+		top: -25px;
+		left: -60px;
+		background: url("../assets/images/footer/Arrow.png") center/ cover no-repeat;
+		font-size: 18px;
+		width: 48px;
+		height: 43px;
+		color: #6d450c;
+	}
+
+	.footer-icon__list {
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	//----------------------------------
+}
+
+@media (max-width: 468px) {
+	.footer__image {
+		text-align: center;
+	}
+	.footer__image img {
+		height: 80%;
+		width: 80%;
+	}
+	.footer__column:nth-child(1) {
+		flex: 1 1 100%;
+	}
+	.input [placeholder="Subscribe to our newsletter"] {
+		font-size: 12px;
+		text-indent: 20px;
+	}
 }

@@ -1,48 +1,46 @@
 .header {
 	position: absolute;
-	top: 70px;
+	top: 0;
 	left: 0;
 	z-index: 50;
 	width: 100%;
 	height: 100%;
+	padding-top: 70px;
 }
 
 .conteiner {
 	max-width: 1750px;
 	margin: 0 auto;
-	border: 1px solid #000;
 	height: 100%;
 }
 .header__row {
 	display: flex;
 	flex-direction: column;
+	border: 1px solid #000;
 }
 
 .header__top {
 	display: flex;
 	align-items: center;
+	border: 1px solid #000;
 }
 
 .header__column {
-	flex: 0 1 53.333%;
+	flex: 1 1 53.333%;
 	border: 1px solid #000;
 }
 .header__column:nth-child(2) {
-	flex: 0 1 13.333%;
-	border: 1px solid #000;
-}
-
-.header__nav {
-	border: 1px solid #000;
+	flex: 0 0 auto;
 }
 
 .nav__list {
 	display: flex;
-	margin: 0 -3%;
+	margin: 0 -17.5px;
+	border: 1px solid #000;
 }
 
 .nav__item {
-	margin: 0 3%;
+	margin: 0 17.5px;
 	border: 1px solid #000;
 }
 
@@ -90,14 +88,21 @@
 	top: 0;
 	left: 0;
 }
-// ************************************************
+
+.icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link {
+	margin: 0 0 0 25px/560.4px * 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+// ********************2***************************
 .icon__column:nth-child(2) {
 	margin: 0 40px/763.5px * 100% 0 50px/763.5px * 100%;
 	border: 1px solid rgba(88, 87, 87, 0.308);
 	transform: rotate(90deg);
 	flex: 0 1 0%;
 }
-// ************************************************
+// ********************2***************************
 .icon__column:nth-child(3) {
 	border: 1px solid rgb(243, 4, 4);
 	display: flex;
@@ -116,7 +121,7 @@
 }
 
 // ******************column************************
-// ************************************************
+// ------------------------------------------------
 .icon__list {
 	transition: transform 1s ease;
 }
@@ -129,14 +134,14 @@
 
 .icon__tabs {
 	position: absolute;
-	top: -15px;
-	right: -22px;
+	top: -12px;
+	right: -20px;
 	background-color: #ffffff;
 	border-radius: 50%;
 	text-align: center;
-	padding-top: 8px;
-	width: 25px;
-	height: 25px;
+	padding-top: 6px;
+	width: 23px;
+	height: 23px;
 	font-size: 12px;
 }
 
@@ -189,3 +194,75 @@
 
 .header__background img {
 }
+@media (max-width: 1200px) {
+	// bth==================bth========================bth
+	.bth {
+		font-size: 16px;
+		width: 180px;
+		height: 50px;
+	}
+	.bth:after {
+		top: 19px;
+		right: 25px;
+		width: 25px;
+		height: 12.5px;
+	}
+
+	//bth---------------------bth----------------------bth
+	.header__column:nth-child(2) {
+		display: none;
+	}
+}
+
+/*-------------------- Header(шапка докуманта) --------------------- */
+@import "bth/header-burger.scss";
+/*------------------------------------------------------------------ */
+
+// adaptive for icons 500px==========================================
+@media (max-width: 500px) {
+	.icon__wrapper {
+		border: 1px solid #000;
+		display: flex;
+	}
+	.icon__column {
+		margin: 0 auto;
+	}
+	.icon__column:nth-child(1) {
+		display: inline-block;
+	}
+	.icon__column:nth-child(1) .icon__list:nth-child(1) {
+		margin: 0;
+		text-align: center;
+	}
+	.icon__column:nth-child(1) .icon__list {
+		text-align: center;
+		margin: 10px;
+	}
+	.icon__column:nth-child(1) .icon__list:nth-child(3) {
+		margin: 0;
+	}
+
+	.icon__column:nth-child(2) {
+		display: none;
+	}
+
+	.icon__column:nth-child(3) {
+		display: inline-block;
+	}
+	.icon__column:nth-child(3) .icon__list:nth-child(1) {
+		margin: 0;
+		text-align: center;
+	}
+	.icon__column:nth-child(3) .icon__list {
+		text-align: center;
+		margin: 0;
+	}
+	.icon__column:nth-child(3) .icon__list:nth-child(3) {
+		margin: 0;
+	}
+	.header__image img {
+		width: 100%;
+		height: 100%;
+	}
+}
+// adaptive for icons 500px--------------------------------

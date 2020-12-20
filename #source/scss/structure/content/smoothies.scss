@@ -18,6 +18,11 @@
 	text-align: center;
 	font-family: "Muli-Regular";
 }
+
+.text::selection {
+	color: red;
+	background-color: yellow;
+}
 .smoothie__text {
 	margin: 60px 0 65px 0;
 	padding: 0 90px;
@@ -28,32 +33,32 @@
 	flex-wrap: wrap;
 	margin: 0 6%;
 }
-//------------------------------------------------------
+//border====================border====================border
 .smoothies__column {
 	flex: 1 0 25%;
 	text-align: center;
-	border-bottom: 1px solid #f6edde;
-	border-left: 1px solid #f6edde;
+	border-bottom: 1px solid#d1cabdd5;
+	border-left: 1px solid #d1cabdd5;
 }
 
 .smoothies__column:nth-child(1) {
-	border-bottom: 1px solid #f6edde;
-	border-left: 0px solid #f6edde;
+	border-bottom: 1px solid#d1cabdd5;
+	border-left: 0px solid#d1cabdd5;
 }
 
 .smoothies__column:nth-child(5) {
-	border-bottom: 0px solid #f6edde;
-	border-left: 0px solid #f6edde;
+	border-bottom: 0px solid#d1cabdd5;
+	border-left: 0px solid#d1cabdd5;
 }
 
 .smoothies__column:nth-child(6),
 .smoothies__column:nth-child(7),
 .smoothies__column:nth-child(8) {
-	border-bottom: 0px solid #f6edde;
-	border-left: 1px solid #f6edde;
+	border-bottom: 0px solid#d1cabdd5;
+	border-left: 1px solid#d1cabdd5;
 }
 
-//------------------------------------------------------
+//border--------------------border--------------------border
 .smoothie__title {
 	color: #f2612d;
 	font-size: 18px;
@@ -69,13 +74,46 @@
 	margin: 27px 0;
 	flex: 1 1 100%;
 }
+
 @media (max-width: 768px) {
 	.smoothies__column {
 		flex: 1 0 50%;
+	}
+	.title {
+		font-size: 35px;
+	}
+
+	//border====================border====================border
+	.smoothies__column:nth-child(2n + 1) {
+		border-bottom: 1px solid#d1cabdd5;
+		border-left: 0px solid#d1cabdd5;
+	}
+	.smoothies__column:nth-child(2n + 6) {
+		border-bottom: 1px solid#d1cabdd5;
+		border-left: 1px solid#d1cabdd5;
+	}
+	.smoothies__column:nth-child(1n + 7) {
+		border-bottom: 0px solid#d1cabdd5;
+	}
+
+	//border--------------------border--------------------border
+	.smoothie__text {
+		margin: 30px 0 35px 0;
+		padding: 0 20px;
 	}
 }
 @media (max-width: 468px) {
 	.smoothies__column {
 		flex: 1 1 100%;
 	}
+	.title {
+		font-size: 30px;
+	}
+
+	//border====================border====================border
+	.smoothies__column:nth-child(n + 2) {
+		border-bottom: 1px solid#d1cabdd5;
+		border-left: 0px solid#d1cabdd5;
+	}
+	//border--------------------border--------------------border
 }

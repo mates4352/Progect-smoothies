@@ -127,3 +127,20 @@
 		order: 1;
 	}
 }
+
+@media (max-width: 764px) {
+	.about__bth {
+		font-size: 14px;
+		background-color: rgb(21, 134, 110);
+		width: 100%;
+		max-width: 250px;
+		border-radius: 30px;
+		border: 1px solid rgb(175, 163, 68);
+	}
+	.about__title {
+		font-size: 35px;
+	}
+	.about__item {
+		font-size: 18px;
+	}
+}
