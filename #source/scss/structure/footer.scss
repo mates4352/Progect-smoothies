@@ -24,11 +24,8 @@
 	align-self: center;
 }
 
-.footer__image {
-}
-
 .footer__title {
-	text-align-last: left;
+	text-align: left;
 	margin-bottom: 45px;
 }
 
@@ -40,9 +37,8 @@
 	color: #6d450c;
 }
 .footer__item a {
+	font: 18px "Muli-Bold";
 	color: #6d450c;
-	font-size: 18px;
-	font-family: "Muli-Bold";
 }
 .footer__list:nth-child(2) .footer__item {
 	margin-top: 0px;
@@ -56,9 +52,6 @@
 
 .footer-icon__item {
 	margin: 0 10px;
-}
-
-.footer-icon__link {
 }
 
 .input {
@@ -85,8 +78,7 @@
 }
 
 .input [placeholder="Subscribe to our newsletter"] {
-	font-size: 17px;
-	font-family: "Muli-Bold";
+	font: 17px "Muli-Bold";
 	color: #6d450c;
 	text-indent: 70px;
 }
@@ -96,10 +88,10 @@
 	justify-content: center;
 }
 .footer__text {
+	font-size: 18px;
 	position: relative;
 	top: 0;
 	left: 0;
-	font-size: 18px;
 	color: #6d450c;
 	border: 1px solid #000;
 }
@@ -128,12 +120,11 @@
 }
 
 .author-rights {
+	font: 13px "Muli-Bold";
 	flex-grow: 0.5;
 	text-align: right;
 	border: 1px solid #000;
 	color: #af8a82;
-	font-size: 13px;
-	font-family: "Muli-Bold";
 }
 
 .footer__bottom-text {

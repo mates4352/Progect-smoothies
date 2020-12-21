@@ -13,10 +13,8 @@
 	color: rgb(247, 174, 59);
 }
 .text {
-	font-size: 18px;
-	line-height: 35px;
+	font: 18px/35px "Muli-Regular";
 	text-align: center;
-	font-family: "Muli-Regular";
 }
 
 .text::selection {
@@ -51,9 +49,7 @@
 	border-left: 0px solid#d1cabdd5;
 }
 
-.smoothies__column:nth-child(6),
-.smoothies__column:nth-child(7),
-.smoothies__column:nth-child(8) {
+.smoothies__column:nth-child(1n + 6) {
 	border-bottom: 0px solid#d1cabdd5;
 	border-left: 1px solid#d1cabdd5;
 }
@@ -114,6 +110,9 @@
 	.smoothies__column:nth-child(n + 2) {
 		border-bottom: 1px solid#d1cabdd5;
 		border-left: 0px solid#d1cabdd5;
+	}
+	.smoothies__column:nth-child(8) {
+		border-bottom: 0px solid#d1cabdd5;
 	}
 	//border--------------------border--------------------border
 }

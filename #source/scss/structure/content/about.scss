@@ -47,7 +47,6 @@
 
 .about__title {
 	font-size: 55px;
-	text-align-last: left;
 }
 
 .about__title span {
@@ -59,15 +58,13 @@
 }
 
 .about__item {
-	line-height: 25px;
+	font: 21px/25px "Muli-Regular";
 	margin-top: 30px;
 	padding-left: 35px;
 	position: relative;
 	top: 0;
 	left: 0;
 	color: #ffffff;
-	font-size: 21px;
-	font-family: "Muli-Regular";
 }
 .about__item:before {
 	content: "";
@@ -81,12 +78,12 @@
 }
 
 .about__bth {
+	text-indent: -60px;
 	font-size: 24px;
 	background-color: rgb(21, 134, 110);
 	width: 380px;
 	height: 60px;
 	border-radius: 30px;
-	text-indent: -60px;
 	border: 1px solid rgb(175, 163, 68);
 }
 .about__bth:after {
@@ -124,7 +121,11 @@
 		order: 2;
 	}
 	.about__column:nth-child(2) {
+		padding: 0 20px;
 		order: 1;
+	}
+	.about__title {
+		text-align: center;
 	}
 }
 
@@ -142,5 +143,9 @@
 	}
 	.about__item {
 		font-size: 18px;
+	}
+	.about__title {
+		text-align: center;
+		font-size: 30px;
 	}
 }

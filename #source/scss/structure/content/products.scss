@@ -48,27 +48,18 @@
 }
 
 .title-h3 {
+	font: bold 24px/22px "Muli-Regular";
 	text-align: center;
-	font-size: 24px;
-	line-height: 22px;
 	color: #ffffff;
-	font-family: "Muli-Regular";
-	font-weight: bold;
-}
-
-.text {
 }
 
 .products__text {
+	font-style: italic;
+	font-family: "Muli-Regular";
 	margin-top: 10px;
 	flex: 1 1 auto;
 	border: 1px solid #000;
 	color: #ffffff;
-	font-style: italic;
-	font-family: "Muli-Regular";
-}
-
-.bth {
 }
 
 .products__bth {

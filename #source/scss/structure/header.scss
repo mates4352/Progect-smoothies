@@ -46,16 +46,12 @@
 
 .nav__item a {
 	color: #ffffff;
-	font-family: "Muli-Bold";
-	font-size: 16px;
+	font: 16px "Muli-Bold";
 	text-transform: uppercase;
 }
 
 .header__image {
 	text-align: center;
-}
-
-.icon {
 }
 
 .icon__wrapper {
@@ -67,11 +63,11 @@
 // ******************column************************
 
 .icon__column:nth-child(1) {
-	border: 1px solid rgb(243, 4, 4);
 	display: flex;
 	justify-content: flex-end;
 	flex: 1 0 33.333%;
 	align-self: center;
+	border: 1px solid rgb(243, 4, 4);
 }
 
 .icon__column:nth-child(1) .icon__list {
@@ -154,14 +150,13 @@
 	top: 0;
 	left: 0;
 	border: 1px solid #036b416b;
+	font: 24px "Muli-Regular";
 	color: #ffffff;
-	font-family: "Muli-Regular";
 	width: 280px;
 	height: 70px;
 	background-color: #0aa566;
 	border-radius: 35px;
 	text-indent: -70px;
-	font-size: 24px;
 	transition: transform 500ms ease;
 }
 
@@ -214,9 +209,9 @@
 	}
 }
 
-/*-------------------- Header(шапка докуманта) --------------------- */
+/*-burger==================burger======================burger-*/
 @import "bth/header-burger.scss";
-/*------------------------------------------------------------------ */
+/*-burger--------------------burger--------------------burger-*/
 
 // adaptive for icons 500px==========================================
 @media (max-width: 500px) {
@@ -260,9 +255,14 @@
 	.icon__column:nth-child(3) .icon__list:nth-child(3) {
 		margin: 0;
 	}
+
 	.header__image img {
 		width: 100%;
 		height: 100%;
+	}
+
+	.bth:hover {
+		transform: translate(0);
 	}
 }
 // adaptive for icons 500px--------------------------------
