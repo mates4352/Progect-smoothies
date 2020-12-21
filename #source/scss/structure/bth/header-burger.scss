@@ -4,21 +4,19 @@
 
 @media (max-width: 1200px) {
 	.header__burger {
+		@include wh(21px, 14px);
 		position: fixed;
 		z-index: 1000;
 		top: 50px;
 		left: 10px;
 		display: block;
-		width: 21px;
-		height: 14px;
 	}
 	.header__burger span,
 	.header__burger:before,
 	.header__burger:after {
 		content: "";
+		@include wh(100%, 2px);
 		background-color: rgb(245, 52, 46);
-		width: 100%;
-		height: 2px;
 		border-radius: 25px;
 		position: absolute;
 		bottom: 0;
@@ -67,11 +65,10 @@
 
 // menu=============================================
 .menu {
+	@include wh(100%, 100%);
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
-	width: 100%;
 	background-color: rgba(0, 0, 0, 0.616);
 	transform: translate(-120%);
 	transition-duration: 1s;
@@ -79,9 +76,8 @@
 }
 
 .menu.active {
+	@include wh(100%, 100%);
 	transform: translate(0%);
-	height: 100%;
-	width: 100%;
 	overflow: auto;
 }
 

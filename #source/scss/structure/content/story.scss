@@ -38,22 +38,19 @@
 }
 
 .storu__bth {
-	height: 60px;
-	width: 300px;
+	@include wh(300px, 60px);
 	text-indent: -90px;
 	margin: 0 0 60px 0;
 }
 
 .story__image {
-	width: 100%;
-	height: 100%;
+	@include wh(100%, 100%);
 	@extend %posRel;
 	padding: 0 0 92.31% 0;
 }
 .story__image img {
+	@include wh(100%, 100%);
 	@extend %posAbs;
-	height: 100%;
-	width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -82,13 +79,12 @@
 	}
 
 	.storu__bth {
+		@include wh(200px, 50px);
 		display: inline-block;
 		position: relative;
 		top: 0;
 		left: 50%;
 		transform: translate(-50%);
-		height: 50px;
-		width: 200px;
 		text-indent: -50px;
 	}
 }
