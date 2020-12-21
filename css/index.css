@@ -1493,6 +1493,7 @@ body {
   -webkit-perspective: 700px;
           perspective: 700px;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .instagram__column {
