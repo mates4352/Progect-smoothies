@@ -71,5 +71,8 @@ adaptive_function();
 
 /* adaptive(уберает указанный блок кода в другой родитель) */
 
-
+let banner = document.querySelector('.banner');
+banner.onclick = function () {
+	banner.style.display = "none"
+}
 

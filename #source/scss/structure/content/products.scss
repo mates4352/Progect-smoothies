@@ -45,20 +45,36 @@
 	text-align: center;
 	margin: 130px 0 40px;
 }
+.products__image:hover {
+	animation-name: animation;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+}
+@keyframes animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate3d(1, 0, 0, 45deg) scale(1.7);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
 
 .title-h3 {
+	color: $white;
 	font: bold 24px/22px "Muli-Regular";
 	text-align: center;
-	color: $white;
 }
 
 .products__text {
+	color: $white;
 	font-style: italic;
 	font-family: "Muli-Regular";
 	margin-top: 10px;
 	flex: 1 1 auto;
 	border: 1px solid #000;
-	color: $white;
 }
 
 .products__bth {

@@ -248,3 +248,20 @@
 	}
 }
 // adaptive for icons 500px--------------------------------
+.banner {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 10000;
+	animation-name: animation;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+}
+
+.text__play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $white;
+}
