@@ -21,9 +21,7 @@
 	border-radius: 50%;
 }
 .instagram__image img {
-	position: absolute;
-	top: 0;
-	left: 0;
+	@extend %posAbs;
 	height: 100%;
 	width: 100%;
 }

@@ -29,9 +29,6 @@
 	margin-bottom: 45px;
 }
 
-.footer__list {
-}
-
 .footer__item {
 	margin-top: 20px;
 	color: #6d450c;
@@ -88,10 +85,8 @@
 	justify-content: center;
 }
 .footer__text {
+	@extend %posRel;
 	font-size: 18px;
-	position: relative;
-	top: 0;
-	left: 0;
 	color: #6d450c;
 	border: 1px solid #000;
 }
@@ -111,11 +106,9 @@
 	background-color: #68301c;
 }
 .footer__bottom {
+	@extend %posRel;
 	display: flex;
 	align-items: center;
-	position: relative;
-	top: 0;
-	left: 0;
 	height: 60px;
 }
 
@@ -190,11 +183,9 @@
 		text-align: center;
 	}
 	.footer__text span {
+		@extend %posRel;
 		border: 1px solid #000;
 		display: inline-block;
-		position: relative;
-		top: 0;
-		left: 0;
 	}
 	.footer__text span:before {
 		content: "";

@@ -25,23 +25,18 @@
 	height: 50%;
 }
 .blog__image {
+	@extend %posRel;
 	height: 100%;
 	width: 100%;
 	margin: 50px 0 200px 0;
-	position: relative;
 	padding: 0 0 67.003% 0;
-	top: 0;
-	left: 0;
 }
 .blog__image img {
-	position: absolute;
-	top: 0;
-	left: 0;
+	@extend %posAbs;
 }
 
 .blog__wrapper {
-	display: flex;
-	flex-direction: column;
+	@extend %flexDirC;
 }
 .blog__title {
 	font-size: 30px;
@@ -58,9 +53,7 @@
 	padding: 0 40px 50px 80px;
 }
 .blog__text span {
-	position: relative;
-	top: 0;
-	left: 0;
+	@extend %posRel;
 	font-family: "Muli-ExtraBoldItalic";
 }
 
@@ -82,8 +75,7 @@
 	font-size: 24px;
 	text-align: center;
 	display: inline-block;
-	position: relative;
-	top: 0;
+	@extend %posRel;
 	margin-bottom: 50px;
 	color: #0aa566;
 }
