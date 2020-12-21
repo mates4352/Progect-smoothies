@@ -42,7 +42,7 @@
 }
 
 .title--white {
-	color: #ffffff;
+	color: $white;
 }
 
 .about__title {
@@ -64,7 +64,7 @@
 	position: relative;
 	top: 0;
 	left: 0;
-	color: #ffffff;
+	color: $white;
 }
 .about__item:before {
 	content: "";

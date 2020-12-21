@@ -45,7 +45,7 @@
 }
 
 .nav__item a {
-	color: #ffffff;
+	color: $white;
 	font: 16px "Muli-Bold";
 	text-transform: uppercase;
 }
@@ -132,7 +132,7 @@
 	position: absolute;
 	top: -12px;
 	right: -20px;
-	background-color: #ffffff;
+	background-color: $white;
 	border-radius: 50%;
 	text-align: center;
 	padding-top: 6px;
@@ -151,7 +151,7 @@
 	left: 0;
 	border: 1px solid #036b416b;
 	font: 24px "Muli-Regular";
-	color: #ffffff;
+	color: $white;
 	width: 280px;
 	height: 70px;
 	background-color: #0aa566;

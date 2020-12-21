@@ -198,7 +198,7 @@ body {
 
 /*------------------------------------------------------------------ */
 /*---------------- Препроцессор(preprocessor) ---------------------- */
-/*---------------------- Переменная(variables) --------------------- */
+/*---------------------- Переменная(variable) --------------------- */
 /*------------------------------------------------------------------ */
 /*----------------------- Элемент(elements) ------------------------ */
 /*------------------------------------------------------------------ */
@@ -270,7 +270,7 @@ body {
 }
 
 .nav__item a {
-  color: #ffffff;
+  color: #fff;
   font: 16px "Muli-Bold";
   text-transform: uppercase;
 }
@@ -378,7 +378,7 @@ body {
   position: absolute;
   top: -12px;
   right: -20px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
   padding-top: 6px;
@@ -399,7 +399,7 @@ body {
   left: 0;
   border: 1px solid #036b416b;
   font: 24px "Muli-Regular";
-  color: #ffffff;
+  color: #fff;
   width: 280px;
   height: 70px;
   background-color: #0aa566;
@@ -730,23 +730,23 @@ body {
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
   text-align: center;
-  border-bottom: 1px solid #d1cabdd5;
-  border-left: 1px solid #d1cabdd5;
+  border-bottom: 1px solid #ddd6cad5;
+  border-left: 1px solid #ddd6cad5;
 }
 
 .smoothies__column:nth-child(1) {
-  border-bottom: 1px solid #d1cabdd5;
-  border-left: 0px solid #d1cabdd5;
+  border-bottom: 1px solid #ddd6cad5;
+  border-left: 0px solid #ddd6cad5;
 }
 
 .smoothies__column:nth-child(5) {
-  border-bottom: 0px solid #d1cabdd5;
-  border-left: 0px solid #d1cabdd5;
+  border-bottom: 0px solid #ddd6cad5;
+  border-left: 0px solid #ddd6cad5;
 }
 
 .smoothies__column:nth-child(1n+6) {
-  border-bottom: 0px solid #d1cabdd5;
-  border-left: 1px solid #d1cabdd5;
+  border-bottom: 0px solid #ddd6cad5;
+  border-left: 1px solid #ddd6cad5;
 }
 
 .smoothie__title {
@@ -785,17 +785,17 @@ body {
   }
 
   .smoothies__column:nth-child(2n+1) {
-    border-bottom: 1px solid #d1cabdd5;
-    border-left: 0px solid #d1cabdd5;
+    border-bottom: 1px solid #ddd6cad5;
+    border-left: 0px solid #ddd6cad5;
   }
 
   .smoothies__column:nth-child(2n+6) {
-    border-bottom: 1px solid #d1cabdd5;
-    border-left: 1px solid #d1cabdd5;
+    border-bottom: 1px solid #ddd6cad5;
+    border-left: 1px solid #ddd6cad5;
   }
 
   .smoothies__column:nth-child(1n+7) {
-    border-bottom: 0px solid #d1cabdd5;
+    border-bottom: 0px solid #ddd6cad5;
   }
 
   .smoothie__text {
@@ -815,12 +815,12 @@ body {
   }
 
   .smoothies__column:nth-child(n+2) {
-    border-bottom: 1px solid #d1cabdd5;
-    border-left: 0px solid #d1cabdd5;
+    border-bottom: 1px solid #ddd6cad5;
+    border-left: 0px solid #ddd6cad5;
   }
 
   .smoothies__column:nth-child(8) {
-    border-bottom: 0px solid #d1cabdd5;
+    border-bottom: 0px solid #ddd6cad5;
   }
 }
 /*------------------------------------------------------------------ */
@@ -880,7 +880,7 @@ body {
 }
 
 .title--white {
-  color: #ffffff;
+  color: #fff;
 }
 
 .about__title {
@@ -902,7 +902,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about__item:before {
@@ -1076,7 +1076,7 @@ body {
 .title-h3 {
   font: bold 24px/22px "Muli-Regular";
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .products__text {
@@ -1087,7 +1087,7 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   border: 1px solid #000;
-  color: #ffffff;
+  color: #fff;
 }
 
 .products__bth {
@@ -1098,7 +1098,7 @@ body {
   height: 60px;
   margin: 60px 0 80px 0;
   text-indent: -70px;
-  border: 1px solid #fff9f9;
+  border: 1px solid #fff;
   background-color: #ffffff00;
 }
 
@@ -1265,7 +1265,7 @@ body {
 .testimonials__text {
   display: inline-block;
   max-width: 460px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .testimonials__sub-text {
