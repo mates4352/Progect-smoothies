@@ -17,9 +17,9 @@
 }
 
 .testimonials__text {
+	color: $white;
 	display: inline-block;
 	max-width: 460px;
-	color: $white;
 }
 
 .testimonials__sub-text {
@@ -30,9 +30,7 @@
 	display: inline-block;
 	margin-top: 35px;
 	color: #f7ae3b;
-}
-
-.testimonials-avatar {
+	font-size: 16px;
 }
 
 .sidebar {

@@ -1,6 +1,3 @@
-.blog {
-}
-
 .blog__body {
 	margin: 100px 0 50px 0;
 }
@@ -59,35 +56,33 @@
 
 .blog__text span:after {
 	content: "";
+	@include wh(20px, 10px);
 	position: absolute;
 	top: 7px;
 	right: -30px;
 	display: inline-block;
 	background: url("../assets/images/header/Arrow.png") center/ cover no-repeat;
-	width: 20px;
-	height: 10px;
 }
 
 .blog__title-bottom {
 	text-align: center;
 }
 .blog__title-bottom span {
+	@extend %posRel;
 	font-size: 24px;
 	text-align: center;
 	display: inline-block;
-	@extend %posRel;
 	margin-bottom: 50px;
 	color: #0aa566;
 }
 .blog__title-bottom span:before {
 	content: "";
+	@include wh(26px, 26px);
 	display: inline-block;
 	position: absolute;
 	top: 0;
 	left: -40px;
 	background: url("../assets/images/blog/Icon.png") center/ cover no-repeat;
-	width: 26px;
-	height: 26px;
 }
 
 @media (max-width: 764px) {

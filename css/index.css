@@ -77,7 +77,7 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 10px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -207,7 +207,7 @@ body {
   left: 0;
 }
 
-.footer__bottom, .footer__text, .input__search, .blog__title-bottom span, .blog__text span, .blog__image, .story__image, .about__item, .header__background, .bth, .icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link, .icon__column:nth-child(1) .icon__list:nth-child(3) {
+.footer__bottom, .footer__text, .input__search, .blog__title-bottom span, .blog__text span, .blog__image, .story__image, .story__column:nth-child(2), .about__item, .header__background, .bth, .icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link, .icon__column:nth-child(1) .icon__list:nth-child(3) {
   position: relative;
   top: 0;
   left: 0;
@@ -381,6 +381,8 @@ body {
 }
 
 .icon__tabs {
+  width: 23px;
+  height: 23px;
   position: absolute;
   top: -12px;
   right: -20px;
@@ -388,8 +390,6 @@ body {
   border-radius: 50%;
   text-align: center;
   padding-top: 6px;
-  width: 23px;
-  height: 23px;
   font-size: 12px;
 }
 
@@ -407,11 +407,11 @@ body {
   background-color: #0aa566;
   border-radius: 35px;
   text-indent: -70px;
-  -webkit-transition: -webkit-transform 500ms ease;
-  transition: -webkit-transform 500ms ease;
-  -o-transition: transform 500ms ease;
-  transition: transform 500ms ease;
-  transition: transform 500ms ease, -webkit-transform 500ms ease;
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
+  transition: -webkit-transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
+  -o-transition: transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
+  transition: transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
+  transition: transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33), -webkit-transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
   border: 1px solid #036b416b;
 }
 
@@ -434,6 +434,9 @@ body {
   right: 25px;
   display: inline-block;
   background: url("../assets/images/header/Arrow.png") center/cover no-repeat;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .header__background {
@@ -762,8 +765,9 @@ body {
 .smoothies__image {
   margin: 27px 0;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border: 1px solid #000;
 }
 
 @media (max-width: 768px) {
@@ -1110,6 +1114,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+  border: 1px solid #000;
 }
 
 .story__column:nth-child(1) {
@@ -1153,6 +1158,14 @@ body {
 .story__image img {
   width: 100%;
   height: 100%;
+}
+
+.story__image--stamp {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25px;
+  left: -120px;
 }
 
 @media (max-width: 1024px) {
@@ -1226,9 +1239,9 @@ body {
 }
 
 .testimonials__text {
+  color: #fff;
   display: inline-block;
   max-width: 460px;
-  color: #fff;
 }
 
 .testimonials__sub-text {
@@ -1239,6 +1252,7 @@ body {
   display: inline-block;
   margin-top: 35px;
   color: #f7ae3b;
+  font-size: 16px;
 }
 
 .sidebar {
@@ -1342,13 +1356,13 @@ body {
 
 .blog__text span:after {
   content: "";
+  width: 20px;
+  height: 10px;
   position: absolute;
   top: 7px;
   right: -30px;
   display: inline-block;
   background: url("../assets/images/header/Arrow.png") center/cover no-repeat;
-  width: 20px;
-  height: 10px;
 }
 
 .blog__title-bottom {
@@ -1365,13 +1379,13 @@ body {
 
 .blog__title-bottom span:before {
   content: "";
+  width: 26px;
+  height: 26px;
   display: inline-block;
   position: absolute;
   top: 0;
   left: -40px;
   background: url("../assets/images/blog/Icon.png") center/cover no-repeat;
-  width: 26px;
-  height: 26px;
 }
 
 @media (max-width: 764px) {
@@ -1417,14 +1431,14 @@ body {
   display: flex;
   -webkit-perspective: 700px;
           perspective: 700px;
+  overflow-x: auto;
 }
 
 .instagram__column {
   -webkit-perspective: 500px;
           perspective: 500px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 20%;
-          flex: 1 0 20%;
+  width: 20%;
+  min-width: 200px;
 }
 
 .instagram__image {
@@ -1460,21 +1474,6 @@ body {
   right: 20px;
 }
 
-@media (max-width: 764px) {
-  .instagram__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .instagram__column {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-}
 /*------------------------------------------------------------------ */
 /*-------------------- Footer(подвал документа) -------------------- */
 .footer {
@@ -1668,9 +1667,6 @@ body {
 
 @media (max-width: 1200px) {
   .footer__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
