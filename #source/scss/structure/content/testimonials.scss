@@ -14,6 +14,7 @@
 
 .testimonials__column:nth-child(1) {
 	margin-right: 50px;
+	@extend %posRel;
 }
 
 .testimonials__text {
@@ -25,20 +26,21 @@
 }
 
 .testimonials__sub-text {
-	@extend %posRel;
 	text-align: center;
-	z-index: 1000;
 }
 .testimonials__sub-text:before {
 	content: "Sarah A";
 	font: 140px/40px "Muli-Bold";
 	position: absolute;
-	top: -250%;
-	left: -20%;
+	top: -10%;
+	right: -20%;
+	display: inline-block;
 	color: #5b250e;
-	z-index: -100;
+	z-index: 0;
 }
-
+.testimonials-avatar {
+	@extend %posRel;
+}
 .testimonials-name__user {
 	display: inline-block;
 	margin-top: 35px;

@@ -137,12 +137,12 @@
 
 .bth {
 	@extend %posRel;
-	@include wh(280px, 70px);
+	padding: 1.9rem 11.354rem;
 	color: $white;
-	font: 24px "Muli-Regular";
+	font: 2.1rem "Muli-Regular";
 	background-color: #0aa566;
-	border-radius: 35px;
-	text-indent: -70px;
+	border-radius: 3.5rem;
+	text-indent: -2.7em;
 	transition: transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
 	border: 1px solid #036b416b;
 }
@@ -157,7 +157,7 @@
 
 .bth:after {
 	content: "";
-	@include wh(40px, 20px);
+	@include wh(4rem, 2rem);
 	position: absolute;
 	top: 23px;
 	right: 25px;
@@ -176,13 +176,11 @@
 @media (max-width: 1200px) {
 	// bth==================bth========================bth
 	.bth {
-		@include wh(180px, 50px);
-		font-size: 16px;
+		padding: 1.9rem 10.354rem;
+		font-size: 1.6rem;
 	}
 	.bth:after {
-		@include wh(25px, 12.5px);
-		top: 19px;
-		right: 25px;
+		@include wh(2.5rem, 1.25rem);
 	}
 
 	//bth---------------------bth----------------------bth

@@ -73,16 +73,16 @@
 }
 
 .about__bth {
-	@include wh(380px, 60px);
-	text-indent: -60px;
-	font-size: 24px;
+	padding: 1.4rem 8.265rem;
+	text-indent: -6rem;
+	font-size: 2.4rem;
 	background-color: rgb(21, 134, 110);
-	border-radius: 30px;
+	border-radius: 3rem;
 	border: 1px solid rgb(175, 163, 68);
 }
 .about__bth:after {
 	content: "";
-	@include wh(30px, 10px);
+	@include wh(3rem, 1rem);
 	position: absolute;
 	top: 25px;
 	right: 25px;
@@ -125,11 +125,10 @@
 @media (max-width: 764px) {
 	.about__bth {
 		font-size: 14px;
-		background-color: rgb(21, 134, 110);
-		width: 100%;
-		max-width: 250px;
-		border-radius: 30px;
-		border: 1px solid rgb(175, 163, 68);
+		.bth {
+			padding: 1.4rem 6.265rem;
+			font-size: 1.46rem;
+		}
 	}
 	.about__title {
 		font-size: 35px;

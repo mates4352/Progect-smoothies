@@ -207,7 +207,7 @@ body {
   left: 0;
 }
 
-.footer__bottom, .footer__text, .input__search, .instagram__image, .blog__title-bottom span, .blog__text span, .blog__image, .testimonials__sub-text, .testimonials__text, .story__image, .story__column:nth-child(2), .about__item, .header__background, .bth, .icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link, .icon__column:nth-child(1) .icon__list:nth-child(3) {
+.footer__bottom, .footer__text, .input__search, .instagram__image, .blog__title-bottom span, .blog__text span, .blog__image, .testimonials-avatar, .testimonials__text, .testimonials__column:nth-child(1), .story__image, .story__column:nth-child(2), .about__item, .header__background, .bth, .icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link, .icon__column:nth-child(1) .icon__list:nth-child(3) {
   position: relative;
   top: 0;
   left: 0;
@@ -402,13 +402,12 @@ body {
 }
 
 .bth {
-  width: 280px;
-  height: 70px;
+  padding: 1.9rem 11.354rem;
   color: #fff;
-  font: 24px "Muli-Regular";
+  font: 2.1rem "Muli-Regular";
   background-color: #0aa566;
-  border-radius: 35px;
-  text-indent: -70px;
+  border-radius: 3.5rem;
+  text-indent: -2.7em;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
   transition: -webkit-transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
   -o-transition: transform 500ms cubic-bezier(0.33, 0.46, 0.08, 1.33);
@@ -429,8 +428,8 @@ body {
 
 .bth:after {
   content: "";
-  width: 40px;
-  height: 20px;
+  width: 4rem;
+  height: 2rem;
   position: absolute;
   top: 23px;
   right: 25px;
@@ -448,16 +447,13 @@ body {
 
 @media (max-width: 1200px) {
   .bth {
-    width: 180px;
-    height: 50px;
-    font-size: 16px;
+    padding: 1.9rem 10.354rem;
+    font-size: 1.6rem;
   }
 
   .bth:after {
-    width: 25px;
-    height: 12.5px;
-    top: 19px;
-    right: 25px;
+    width: 2.5rem;
+    height: 1.25rem;
   }
 
   .header__column:nth-child(2) {
@@ -929,19 +925,18 @@ body {
 }
 
 .about__bth {
-  width: 380px;
-  height: 60px;
-  text-indent: -60px;
-  font-size: 24px;
+  padding: 1.4rem 8.265rem;
+  text-indent: -6rem;
+  font-size: 2.4rem;
   background-color: #15866e;
-  border-radius: 30px;
+  border-radius: 3rem;
   border: 1px solid #afa344;
 }
 
 .about__bth:after {
   content: "";
-  width: 30px;
-  height: 10px;
+  width: 3rem;
+  height: 1rem;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -999,11 +994,10 @@ body {
 @media (max-width: 764px) {
   .about__bth {
     font-size: 14px;
-    background-color: #15866e;
-    width: 100%;
-    max-width: 250px;
-    border-radius: 30px;
-    border: 1px solid #afa344;
+  }
+  .about__bth .bth {
+    padding: 1.4rem 6.265rem;
+    font-size: 1.46rem;
   }
 
   .about__title {
@@ -1206,9 +1200,9 @@ body {
 }
 
 .storu__bth {
-  width: 300px;
-  height: 60px;
-  text-indent: -90px;
+  padding: 1.6rem 0;
+  width: 30rem;
+  text-indent: -9rem;
   margin: 0 0 60px 0;
 }
 
@@ -1311,17 +1305,17 @@ body {
 
 .testimonials__sub-text {
   text-align: center;
-  z-index: 1000;
 }
 
 .testimonials__sub-text:before {
   content: "Sarah A";
   font: 140px/40px "Muli-Bold";
   position: absolute;
-  top: -250%;
-  left: -20%;
+  top: -10%;
+  right: -20%;
+  display: inline-block;
   color: #5b250e;
-  z-index: -100;
+  z-index: 0;
 }
 
 .testimonials-name__user {

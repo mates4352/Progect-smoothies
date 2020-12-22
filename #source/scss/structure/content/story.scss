@@ -43,8 +43,9 @@
 }
 
 .storu__bth {
-	@include wh(300px, 60px);
-	text-indent: -90px;
+	padding: 1.6rem 0;
+	width: 30rem;
+	text-indent: -9rem;
 	margin: 0 0 60px 0;
 }
 
