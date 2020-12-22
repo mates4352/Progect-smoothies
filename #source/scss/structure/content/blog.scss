@@ -8,10 +8,12 @@
 
 .blog__row {
 	display: flex;
+	border: 3px solid rgb(163, 27, 27);
 }
 
 .blog__column {
 	flex: 1 0 50%;
+	border: 1px solid rgb(79, 27, 163);
 }
 .blog__column:nth-child(2) {
 	border-top: 10px solid #f7ae3b;
@@ -39,15 +41,18 @@
 	font-size: 30px;
 	color: #f2612d;
 	padding: 50px 20px 0 30px;
+	border: 3px solid rgb(163, 27, 27);
 }
 
 .blog__time {
 	margin: 25px 0 50px 40px;
+	border: 3px solid rgb(18, 8, 151);
 }
 
 .blog__text {
 	text-align: left;
 	padding: 0 40px 50px 80px;
+	border: 3px solid rgb(211, 18, 18);
 }
 .blog__text span {
 	@extend %posRel;

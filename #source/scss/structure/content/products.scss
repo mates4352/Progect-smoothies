@@ -45,11 +45,12 @@
 	text-align: center;
 	margin: 130px 0 40px;
 }
-.products__image:hover {
+.products__column:hover .products__image {
 	animation-name: animation;
 	animation-duration: 500ms;
 	animation-iteration-count: infinite;
 }
+
 @keyframes animation {
 	0% {
 		transform: rotate(0deg);

@@ -207,7 +207,7 @@ body {
   left: 0;
 }
 
-.footer__bottom, .footer__text, .input__search, .instagram__image, .blog__title-bottom span, .blog__text span, .blog__image, .story__image, .story__column:nth-child(2), .about__item, .header__background, .bth, .icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link, .icon__column:nth-child(1) .icon__list:nth-child(3) {
+.footer__bottom, .footer__text, .input__search, .instagram__image, .blog__title-bottom span, .blog__text span, .blog__image, .testimonials__sub-text, .testimonials__text, .story__image, .story__column:nth-child(2), .about__item, .header__background, .bth, .icon__column:nth-child(1) .icon__list:nth-child(3) .icon__link, .icon__column:nth-child(1) .icon__list:nth-child(3) {
   position: relative;
   top: 0;
   left: 0;
@@ -367,6 +367,7 @@ body {
 }
 
 .icon__list {
+  border: 3px solid #4f1ba3;
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   -o-transition: transform 1s ease;
@@ -397,6 +398,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border: 3px solid #4f1ba3;
 }
 
 .bth {
@@ -634,7 +636,7 @@ body {
     display: inline-block;
   }
 
-  .icon__column:nth-child(1) .icon__list:nth-child(1) {
+  .icon__column:nth-child(1) .icon__list:first-child {
     margin: 0;
     text-align: center;
   }
@@ -644,7 +646,7 @@ body {
     margin: 10px;
   }
 
-  .icon__column:nth-child(1) .icon__list:nth-child(3) {
+  .icon__column:nth-child(1) .icon__list:last-child {
     margin: 0;
   }
 
@@ -656,7 +658,7 @@ body {
     display: inline-block;
   }
 
-  .icon__column:nth-child(3) .icon__list:nth-child(1) {
+  .icon__column:nth-child(3) .icon__list:first-child {
     margin: 0;
     text-align: center;
   }
@@ -666,7 +668,7 @@ body {
     margin: 0;
   }
 
-  .icon__column:nth-child(3) .icon__list:nth-child(3) {
+  .icon__column:nth-child(3) .icon__list:last-child {
     margin: 0;
   }
 
@@ -1076,7 +1078,7 @@ body {
   margin: 130px 0 40px;
 }
 
-.products__image:hover {
+.products__column:hover .products__image {
   -webkit-animation-name: animation;
           animation-name: animation;
   -webkit-animation-duration: 500ms;
@@ -1227,6 +1229,7 @@ body {
   position: absolute;
   top: 25px;
   left: -120px;
+  border: 3px solid #4f1ba3;
 }
 
 @media (max-width: 1024px) {
@@ -1303,10 +1306,22 @@ body {
   color: #fff;
   display: inline-block;
   max-width: 460px;
+  z-index: 10000;
 }
 
 .testimonials__sub-text {
   text-align: center;
+  z-index: 1000;
+}
+
+.testimonials__sub-text:before {
+  content: "Sarah A";
+  font: 140px/40px "Muli-Bold";
+  position: absolute;
+  top: -250%;
+  left: -20%;
+  color: #5b250e;
+  z-index: -100;
 }
 
 .testimonials-name__user {
@@ -1372,12 +1387,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 3px solid #a31b1b;
 }
 
 .blog__column {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+  border: 1px solid #4f1ba3;
 }
 
 .blog__column:nth-child(2) {
@@ -1400,15 +1417,18 @@ body {
   font-size: 30px;
   color: #f2612d;
   padding: 50px 20px 0 30px;
+  border: 3px solid #a31b1b;
 }
 
 .blog__time {
   margin: 25px 0 50px 40px;
+  border: 3px solid #120897;
 }
 
 .blog__text {
   text-align: left;
   padding: 0 40px 50px 80px;
+  border: 3px solid #d31212;
 }
 
 .blog__text span {

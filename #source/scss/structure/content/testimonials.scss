@@ -17,13 +17,26 @@
 }
 
 .testimonials__text {
+	@extend %posRel;
 	color: $white;
 	display: inline-block;
 	max-width: 460px;
+	z-index: 10000;
 }
 
 .testimonials__sub-text {
+	@extend %posRel;
 	text-align: center;
+	z-index: 1000;
+}
+.testimonials__sub-text:before {
+	content: "Sarah A";
+	font: 140px/40px "Muli-Bold";
+	position: absolute;
+	top: -250%;
+	left: -20%;
+	color: #5b250e;
+	z-index: -100;
 }
 
 .testimonials-name__user {
