@@ -19,6 +19,9 @@
 	display: flex;
 	align-items: center;
 	border: 1px solid #000;
+	@media screen and (max-width: 1200px) {
+		flex-direction: column;
+	}
 }
 
 .header__column {
@@ -53,6 +56,9 @@
 .icon__wrapper {
 	border: 1px solid #000;
 	display: flex;
+	@media screen and(max-width:1200px) {
+		margin: 25px 0;
+	}
 }
 
 // ************************************************
@@ -195,53 +201,24 @@
 
 // adaptive for icons 500px==========================================
 @media (max-width: 500px) {
-	.icon__wrapper {
-		border: 1px solid #000;
-		display: flex;
-	}
 	.icon__column {
 		margin: 0 auto;
 	}
-	.icon__column:nth-child(1) {
-		display: inline-block;
-	}
-	.icon__column:nth-child(1) .icon__list:first-child {
-		margin: 0;
-		text-align: center;
-	}
-	.icon__column:nth-child(1) .icon__list {
-		text-align: center;
-		margin: 10px;
-	}
-	.icon__column:nth-child(1) .icon__list:last-child {
-		margin: 0;
-	}
-
-	.icon__column:nth-child(2) {
-		display: none;
-	}
-
-	.icon__column:nth-child(3) {
-		display: inline-block;
-	}
-	.icon__column:nth-child(3) .icon__list:first-child {
-		margin: 0;
-		text-align: center;
-	}
-	.icon__column:nth-child(3) .icon__list {
-		text-align: center;
-		margin: 0;
-	}
-	.icon__column:nth-child(3) .icon__list:last-child {
-		margin: 0;
-	}
-
 	.header__image img {
 		@include wh(100%, 100%);
 	}
-
 	.bth:hover {
 		transform: translate(0);
+	}
+	.icon__wrapper {
+		flex-direction: column;
+		margin-top: 25px;
+	}
+	.icon__column:nth-child(2) {
+		display: none;
+	}
+	.icon__column:nth-child(3) {
+		margin-top: 25px;
 	}
 }
 // adaptive for icons 500px--------------------------------

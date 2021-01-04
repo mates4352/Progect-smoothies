@@ -1,4 +1,5 @@
 .testimonials__wrapper {
+	@extend %posRel;
 	background-color: #643318;
 	padding: 120px 0 80px 0;
 }
@@ -18,7 +19,6 @@
 }
 
 .testimonials__text {
-	@extend %posRel;
 	color: $white;
 	display: inline-block;
 	max-width: 460px;
@@ -28,15 +28,21 @@
 .testimonials__sub-text {
 	text-align: center;
 }
-.testimonials__sub-text:before {
+.testimonials__wrapper:before {
 	content: "Sarah A";
 	font: 140px/40px "Muli-Bold";
+	font-size: 140px/1920px * 100vw;
 	position: absolute;
-	top: -10%;
-	right: -20%;
-	display: inline-block;
+	top: 40%;
+	right: 40%;
 	color: #5b250e;
 	z-index: 0;
+	@media screen and(max-width:764px) {
+		font-size: 90px/764px * 100vw;
+		top: 30%;
+		right: 50%;
+		transform: translate(50%, -60%);
+	}
 }
 .testimonials-avatar {
 	@extend %posRel;
