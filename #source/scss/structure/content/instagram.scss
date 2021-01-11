@@ -9,6 +9,7 @@
 	perspective: 500px;
 	width: 20%;
 	min-width: 200px;
+	z-index: 1000;
 }
 
 .instagram__image {
@@ -16,10 +17,12 @@
 	height: 100%;
 	padding: 0 0 103.76% 0;
 	transition-duration: 1s;
+	z-index: 0;
 }
-.instagram__column:hover .instagram__image {
-	transform: rotate3d(1, 1, 0, 360deg);
-	border-radius: 50%;
+.instagram__image:hover  {
+	transform: translate3d(0,25px,150px);
+	z-index: 1;
+	
 }
 .instagram__image img {
 	@include wh(100%, 100%);

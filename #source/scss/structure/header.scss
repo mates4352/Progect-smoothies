@@ -39,8 +39,23 @@
 }
 
 .nav__item {
+	@extend %posRel ;
 	margin: 0 17.5px;
 	border: 1px solid #000;
+}
+.nav__item::before{
+	content: "";
+	@include wh(100%,1px);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(184, 66, 253);
+	transform: scale(0);
+	transition: transform 1s ease;
+}
+.nav__item:hover::before{
+	content: "";
+	transform: scale(1);
 }
 
 .nav__item a {
@@ -169,7 +184,11 @@
 	right: 25px;
 	display: inline-block;
 	background: url("../assets/images/header/Arrow.png") center/ cover no-repeat;
-	transition-duration: 1s;
+	transition-duration: 500ms;
+}
+.bth:hover:after{
+	position: absolute;
+	right: 15px;
 }
 
 .header__background {

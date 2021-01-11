@@ -84,9 +84,9 @@
 	content: "";
 	@include wh(3rem, 1rem);
 	position: absolute;
-	top: 25px;
+	top: 50%;
 	right: 25px;
-	display: inline-block;
+	transform: translateY(-50%);
 	background: url("../assets/images/header/Arrow.png") center/ cover no-repeat;
 }
 
@@ -99,7 +99,7 @@
 		border: 1px solid #000;
 	}
 	.about__column {
-		flex: 1 0 50%;
+		flex: 1 0 45%;
 	}
 }
 @media (max-width: 1024px) {

@@ -45,8 +45,8 @@
 .storu__bth {
 	padding: 1.6rem 0;
 	width: 30rem;
-	text-indent: -9rem;
-	margin: 0 0 60px 0;
+	text-indent: -3rem;
+	margin-bottom: 60px;
 }
 
 .story__image {
@@ -68,6 +68,11 @@
 }
 
 @media (max-width: 1024px) {
+	.story__image--stamp {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
 	.story__row {
 		display: flex;
 		flex-wrap: wrap;
@@ -95,10 +100,6 @@
 	.storu__bth {
 		@include wh(200px, 50px);
 		display: inline-block;
-		position: relative;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%);
-		text-indent: -50px;
+		margin: 0 auto 60px auto;
 	}
 }

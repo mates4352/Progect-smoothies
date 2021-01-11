@@ -53,24 +53,30 @@
 
 .input {
 	margin-bottom: 35px;
+	border: 1px solid #000;
+	@extend %posRel;
 }
 
 .input__search {
 	@include wh(90%, 60px);
-	@extend %posRel;
 	border-radius: 35px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	transition: border 1s ease,box-shadow 1s ease;
 }
-.input__search:before {
-	content: "";
+.input__search:focus{
+	border: 1px solid rgb(136, 134, 134);
+	box-shadow: 1px 2px 4px #000;
+}
+.input__image {
 	@include wh(40px, 20px);
 	position: absolute;
-	top: 0;
-	left: 0;
-	background: url("../assets/images/footer/Icon.png") center/ cover no-repeat;
+	top: 50%;
+	left: 5%;
+	transform: translatey(-50%);
 	border: 1px solid #000;
 }
 
-.input [placeholder="Subscribe to our newsletter"] {
+[placeholder="Subscribe to our newsletter"] {
 	font: 17px "Muli-Bold";
 	color: #6d450c;
 	text-indent: 70px;
@@ -143,6 +149,9 @@
 	background: url("../assets/images/footer/arrow2.png") center/ cover no-repeat;
 }
 @media (max-width: 1200px) {
+	.footer__title{
+		text-align: center;
+	}
 	.footer__row {
 		flex-wrap: wrap;
 	}
@@ -163,9 +172,8 @@
 	.footer__column:nth-child(1) {
 		flex: 1 0 50%;
 	}
-	.input [placeholder="Subscribe to our newsletter"] {
+[placeholder="Subscribe to our newsletter"] {
 		font-size: 16px;
-		text-indent: 30px;
 	}
 	//----------------------------------
 	.footer__row--df {
@@ -193,10 +201,11 @@
 	}
 
 	.footer-icon__list {
-		margin-top: 10px;
+		margin: 10px 0 0 0;
 		display: flex;
 		justify-content: center;
 	}
+	
 	//----------------------------------
 }
 
@@ -212,6 +221,5 @@
 	}
 	.input [placeholder="Subscribe to our newsletter"] {
 		font-size: 12px;
-		text-indent: 20px;
 	}
 }

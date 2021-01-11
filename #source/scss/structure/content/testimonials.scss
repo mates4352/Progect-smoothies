@@ -47,6 +47,10 @@
 .testimonials-avatar {
 	@extend %posRel;
 }
+.testimonials-avatar image{
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+}
 .testimonials-name__user {
 	display: inline-block;
 	margin-top: 35px;
