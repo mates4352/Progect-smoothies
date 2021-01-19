@@ -1,33 +1,27 @@
 .instagram__row {
 	display: flex;
-	perspective: 700px;
 	overflow-x: auto;
 	overflow-y: hidden;
 }
 
-.instagram__column {
-	perspective: 500px;
+.instagram__image {
+	position: relative;
 	width: 20%;
 	min-width: 200px;
+	transition-duration: 1s;
+
+}
+.instagram__image img {
+	width: 100%;
+	height: 100%;
+	overflow-x: visible;
+	overflow-y: visible;
+}
+.instagram__image:hover  {
+	transform: scale(1.2);
 	z-index: 1000;
 }
 
-.instagram__image {
-	@extend %posRel;
-	height: 100%;
-	padding: 0 0 103.76% 0;
-	transition-duration: 1s;
-	z-index: 0;
-}
-.instagram__image:hover  {
-	transform: translate3d(0,25px,150px);
-	z-index: 1;
-	
-}
-.instagram__image img {
-	@include wh(100%, 100%);
-	@extend %posAbs;
-}
 
 .instagram__image:before {
 	content: "";

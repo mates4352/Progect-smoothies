@@ -12,30 +12,49 @@ ibg();
 
 /* ibg(вставляет задний фон через js) */
 
+let product = document.querySelectorAll('.products__bth')
+
+product.forEach(function (event) {
+	event.addEventListener("click", function () {
+		let number = document.getElementById('number');
+		number.innerText++
+	})
+})
+
+
+
 /* active(onclick) */
 
+let burger = document.querySelector('.header__burger')
+
+burger.addEventListener('click', function () {
+	let menu = document.querySelector('.menu')
+	let body = document.querySelector('body')
+
+	menu.classList.toggle("active")
+	body.classList.toggle('lock')
+})
+
+// function getClass(bth, menu, body) {
+// 	bth.onclick = function () {
+// 		this.classList.toggle("active")
+// 		menu.classList.toggle("active")
+// 		body.classList.toggle('lock')
+// 	}
+
+// }
+
+// getClass(
+// 	document.querySelector('.header__burger'),
+// 	document.querySelector('.menu'),
+// 	document.querySelector('body'));
 
 
 
-
-function getClass(bth, menu, body) {
-	bth.onclick = function () {
-		menu.classList.toggle("active")
-		this.classList.toggle("active")
-		body.classList.toggle('lock')
-	}
-
-}
-getClass(
-	document.querySelector('.header__burger'),
-	document.querySelector('.menu'),
-	document.querySelector('body'));
 
 // $(document).ready(function () {
 // 	$('.header__burger').click(function (event) {
 // 		$('.header__burger,.menu').toggleClass('active');
-// 		// 		body.lock{
-// 		// 		overflow: hidden;  -блокирует блок при скроле 
 // 		$('body').toggleClass('lock');
 // 	});
 // });
