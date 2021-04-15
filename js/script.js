@@ -57,7 +57,7 @@ function adaptive_header(w, h) {
 	var headerMenu = $('.menu');
 	var header__menu = $('.nav__list');
 
-	if (w < 1200) {
+	if (w < 1300) {
 		if (!header__menu.hasClass('done')) {
 			header__menu.addClass('done').appendTo(headerMenu);
 		}
