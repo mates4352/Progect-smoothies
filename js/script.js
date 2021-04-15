@@ -49,33 +49,6 @@ burger.addEventListener('click', function () {
 	body.classList.toggle('lock')
 })
 
-// function getClass(bth, menu, body) {
-// 	bth.onclick = function () {
-// 		this.classList.toggle("active")
-// 		menu.classList.toggle("active")
-// 		body.classList.toggle('lock')
-// 	}
-
-// }
-
-// getClass(
-// 	document.querySelector('.header__burger'),
-// 	document.querySelector('.menu'),
-// 	document.querySelector('body'));
-
-
-
-
-// $(document).ready(function () {
-// 	$('.header__burger').click(function (event) {
-// 		$('.header__burger,.menu').toggleClass('active');
-// 		$('body').toggleClass('lock');
-// 	});
-// });
-
-
-/* adaptive(уберает указанный блок кода в другой родитель) */
-
 $(window).resize(function (event) {
 	adaptive_function();
 });
@@ -102,10 +75,4 @@ function adaptive_function() {
 }
 adaptive_function();
 
-/* adaptive(уберает указанный блок кода в другой родитель) */
-
-let banner = document.querySelector('.banner');
-banner.onclick = function () {
-	banner.style.display = "none"
-}
 
