@@ -76,3 +76,10 @@ function adaptive_function() {
 adaptive_function();
 
 
+
+const animation = document.querySelector('.about__image')
+console.log(animation);
+animation.addEventListener('mousemove', (event) => {
+	const halfHeight = animation.offsetHeight / 2;
+	animation.style.transform = "rotateX(" + - (event.offsetY - halfHeight) / 10 + "deg) rotateY(" + (event.offsetX - halfHeight) / 10 + "deg)";
+})
