@@ -77,9 +77,12 @@ adaptive_function();
 
 
 
-const animation = document.querySelector('.about__image')
-console.log(animation);
-animation.addEventListener('mousemove', (event) => {
-	const halfHeight = animation.offsetHeight / 2;
-	animation.style.transform = "rotateX(" + - (event.offsetY - halfHeight) / 10 + "deg) rotateY(" + (event.offsetX - halfHeight) / 10 + "deg)";
+const animation = document.querySelectorAll('.imgTrasform')
+animation.forEach((event) => {
+	event.addEventListener('mousemove', (e) => {
+		event.parentElement.style.perspective = `${1500}px`
+		const halfHeight = event.offsetHeight / 2;
+		event.style.transform = "rotateX(" + - (e.offsetY - halfHeight) / 10 + "deg) rotateY(" + (e.offsetX - halfHeight) / 10 + "deg)";
+		event.style.transform
+	})
 })
